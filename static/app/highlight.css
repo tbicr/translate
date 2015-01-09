@@ -1,0 +1,15 @@
+.warn-suspicious-characters {
+    background-color: red;
+}
+
+.warn-upper-in-middle {
+    background-color: aqua;
+}
+
+.warn-punctuation-many-spaces, .warn-punctuation-except-spaces {
+    background-color: green;
+}
+
+.warn-paragraph-not-end {
+    background-color: yellow;
+}

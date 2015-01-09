@@ -1,0 +1,11 @@
+# environment
+env/
+node_modules/
+bower_components/
+
+# work files
+static/app.debug/
+static/app.prod/
+static/app.test/
+
+.py[co]

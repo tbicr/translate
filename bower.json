@@ -1,0 +1,13 @@
+{
+    "name": "translator",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "",
+        "medium": "",
+//        "undo": "",
+//        "rangy": ""
+    },
+    "devDependencies": {
+        "requirejs": ""
+    }
+}

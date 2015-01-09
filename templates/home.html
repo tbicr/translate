@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Translator</title>
+    <link rel="stylesheet" type="text/css" href="/static/app.debug/medium.css" />
+    <link rel="stylesheet" type="text/css" href="/static/app/app.css" />
+    <link rel="stylesheet" type="text/css" href="/static/app/highlight.css" />
+</head>
+<body>
+    <div class="container-prev">
+        <div class="scan-prev">
+            <img class="scan-image-prev" />
+        </div>
+        <div class="nav"></div>
+        <div class="text-prev">
+            <div class="text-edit-prev"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="scan">
+            <img class="scan-image" />
+        </div>
+        <div class="nav">
+            <button class="action-first">First</button>
+            <button class="action-prev">Prev</button>
+            <button class="action-next">Next</button>
+            <button class="action-last">Last</button>
+            <button class="action-save">Save</button>
+            <a href="/download?book_id=1">Download</a>
+            <div>
+                <label><input type="radio" name="next" value="unknown">
+                    <span class="warn-unknown-page-end">Unknown</span>
+                </label><br/>
+                <label><input type="radio" name="next" value="word">Word</label><br/>
+                <label><input type="radio" name="next" value="old_paragraph">Old Paragraph</label><br/>
+                <label><input type="radio" name="next" value="new_paragraph">New Paragraph</label><br/>
+                <label><input type="radio" name="next" value="new_page">New Page</label><br/>
+            </div>
+            <button class="action-style-h1">h1</button>
+            <button class="action-style-h2">h2</button>
+            <button class="action-style-h3">h3</button>
+            <button class="action-style-h4">h4</button>
+            <button class="action-style-h5">h5</button>
+            <button class="action-style-h6">h6</button>
+            <button class="action-style-p">p</button>
+            <button class="action-style-b">bold</button>
+            <button class="action-style-i">italic</button>
+            <button class="action-style-quote">qoute</button>
+            <button class="action-style-comment">comment</button>
+        </div>
+        <div class="text">
+            <div class="text-edit"></div>
+            <div class="text-highlight Medium Medium-rich"></div>
+        </div>
+    </div>
+    <div class="container-next">
+        <div class="scan-next">
+            <img class="scan-image-next" />
+        </div>
+        <div class="nav"></div>
+        <div class="text-next">
+            <div class="text-edit-next"></div>
+        </div>
+    </div>
+    <script src="/static/app.debug/jquery.js"></script>
+    <script src="/static/app.debug/medium.js"></script>
+    <script src="/static/app.debug/require.js"></script>
+    <script src="/static/app.debug/util.js"></script>
+    <script src="/static/app.debug/highlight.js"></script>
+    <script src="/static/app.debug/app.js"></script>
+    <script>
+        require(['app']);
+    </script>
+</body>
+</html>
